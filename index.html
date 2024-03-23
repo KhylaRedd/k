@@ -1,73 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BookInventory</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
 
-   
+
 
     <div class="grid">
 
         <div class="left">
-               <h1>Kink & Quill</h1>
+            <h1>Kink & Quill</h1>
         </div>
 
         <div class="middle">
             <ul id="booklist">
 
-              <li class="book">
-                <img class="book__img" src="https://m.media-amazon.com/images/I/51p+yiLxdfS._SY445_SX342_.jpg" height="150px" width="150px" alt="">
-                <div class="book__description">
-                    <h3 class="book__title">One Hundred Years of Solitude</h3>
-                    <h4 class="book__author">Gabriel Garcia Marquez</h2>
-                    <h6 class="book__stock">in stock</h6>
-                    <p class="book__price">$99.99</p>
-                    <i class="fa-solid fa-trash-can" id="trash-can"></i>
-                </div>
-              
-              </li>
+                <li class="book">
+                    <img class="book__img" src="https://m.media-amazon.com/images/I/51p+yiLxdfS._SY445_SX342_.jpg"
+                        alt="">
+                    <div class="book__description">
+                        <h3 class="book__title">One Hundred Years of Solitude</h3>
+                        <h4 class="book__author">Gabriel Garcia Marquez</h4>
+                        <h6 class="book__stock">In stock</h6>
+                        <p class="book__price">$99.99</p>
 
-              <li class="book">
-        
+                    </div>
+
+                    <i class="fas fa-trash-alt trash-icon">Remove</i>
+
                 </li>
-           </ul>
 
-        </div> 
+                <li class="book">
+                    <!-- <img class="book__img" src="https://html.com/wp-content/uploads/flamingo.webp"
+                        alt="">
+                    <div class="book__description">
+                        <h3 class="book__title">One Hundred Years of Solitude</h3>
+                        <h4 class="book__author">Gabriel Garcia Marquez</h2>
+                            <h6 class="book__stock">In stock</h6>
+                            <p class="book__price">$99.99</p>
+
+                    </div>
+
+                    <i class="fas fa-trash-alt trash-icon">Remove</i> -->
+
+                </li>
+
+
+            </ul>
+
+        </div>
 
         <div class="right">
             <form class="right__form">
-            
-                
-                <input type="text" placeholder="Title" id="Title">
 
-                <input type="text" placeholder="Author" id="Author">
 
-                <input type="text" placeholder="Image-URL"
-                id="Image Url">
+                <input type="text" placeholder="Title" id="title" required>
 
-                <input type="text" placeholder="Price"
-                id="Price">
+                <input type="text" placeholder="Author" id="author" required>
 
-                    <select class="stock" id="stock"> 
-                        <option value="In-stock">In Stock</option> 
-                        <option value="Out-of-Stock">Out of Stock</option> 
-                       
-                    </select>
-  
+                <input type="text" placeholder="Image-URL" id="image-Url" required>
+
+                <input type="text" placeholder="Price" id="price" required>
+
+                <select class="stock" id="stock" required>
+                    <option value="In-stock">In Stock</option>
+                    <option value="Out-of-Stock">Out of Stock</option>
+
+                </select>
+
 
 
                 <button id="inventoryButton">Add to Inventory</button>
 
 
-            </form>      
-        </div>  
-      
-      </div>
-      <script src="script.js"></script>
+            </form>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
